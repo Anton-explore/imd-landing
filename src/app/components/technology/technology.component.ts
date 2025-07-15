@@ -28,4 +28,9 @@ export class TechnologyComponent implements OnInit {
   makeCall() {
     window.location.href = 'tel:+380443334455';
   }
+
+  // Navigate to main website
+  navigateToMainSite() {
+    window.open('https://imd.ua/', '_blank');
+  }
 }
