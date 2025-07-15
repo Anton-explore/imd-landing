@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <!-- IMD Text -->
+  <text x="10" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">IMD</text>
+  
+  <!-- Medical symbol -->
+  <circle cx="90" cy="20" r="15" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M85 20 L95 20 M90 15 L90 25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Microscope icon -->
+  <rect x="75" y="12" width="2" height="16" fill="white"/>
+  <circle cx="76" cy="10" r="3" fill="none" stroke="white" stroke-width="1"/>
+</svg>

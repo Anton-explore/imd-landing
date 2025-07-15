@@ -1,0 +1,52 @@
+<section class="partners-section" id="partners" #partnersSection>
+  <div class="container">
+    <h2 class="section-title animate-on-scroll">Наші партнери</h2>
+    <p class="section-subtitle animate-on-scroll">
+      Ми співпрацюємо з провідними світовими компаніями у сфері медичної діагностики
+    </p>
+    
+    <div class="partners-grid">
+      <div class="partner-card animate-on-scroll" *ngFor="let partner of partners; let i = index" [style.animation-delay.ms]="i * 200">
+        <div class="partner-logo">
+          <img [src]="partner.logo" [alt]="partner.name" loading="lazy">
+        </div>
+        <div class="partner-info">
+          <h3>{{ partner.name }}</h3>
+          <p>{{ partner.description }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="partnership-benefits">
+      <h3 class="animate-on-scroll">Переваги партнерства</h3>
+      <div class="benefits-grid">
+        <div class="benefit-item animate-on-scroll">
+          <div class="benefit-icon">🔬</div>
+          <h4>Сучасне обладнання</h4>
+          <p>Використання найновіших технологій від світових лідерів</p>
+        </div>
+        <div class="benefit-item animate-on-scroll">
+          <div class="benefit-icon">⚡</div>
+          <h4>Швидкі результати</h4>
+          <p>Оптимізовані процеси для максимальної ефективності</p>
+        </div>
+        <div class="benefit-item animate-on-scroll">
+          <div class="benefit-icon">🎯</div>
+          <h4>Висока точність</h4>
+          <p>Гарантована якість та достовірність результатів</p>
+        </div>
+        <div class="benefit-item animate-on-scroll">
+          <div class="benefit-icon">🌍</div>
+          <h4>Міжнародні стандарти</h4>
+          <p>Відповідність європейським та світовим стандартам</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cta-section">
+      <button mat-raised-button color="primary" class="main-site-btn animate-on-scroll" (click)="navigateToMainSite()">
+        ДІЗНАТИСЯ БІЛЬШЕ ПРО IMD
+      </button>
+    </div>
+  </div>
+</section>

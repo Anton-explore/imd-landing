@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60">
+  <defs>
+    <linearGradient id="partnerGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#66bb6a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Partner logo placeholder -->
+  <rect x="10" y="10" width="130" height="40" fill="none" stroke="url(#partnerGrad4)" stroke-width="2" rx="5"/>
+  <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#partnerGrad4)">ДІАГНОСТИКА+</text>
+  <text x="75" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="url(#partnerGrad4)">Diagnostics Plus</text>
+  
+  <!-- Decorative elements -->
+  <polygon points="25,30 30,25 35,30 30,35" fill="url(#partnerGrad4)" opacity="0.3"/>
+  <polygon points="115,30 120,25 125,30 120,35" fill="url(#partnerGrad4)" opacity="0.3"/>
+</svg>

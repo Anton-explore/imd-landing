@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60">
+  <defs>
+    <linearGradient id="partnerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4db6ac;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80cbc4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Partner logo placeholder -->
+  <rect x="10" y="10" width="130" height="40" fill="none" stroke="url(#partnerGrad2)" stroke-width="2" rx="5"/>
+  <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#partnerGrad2)">МЕДТЕХ</text>
+  <text x="75" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="url(#partnerGrad2)">Medical Technology</text>
+  
+  <!-- Decorative elements -->
+  <rect x="20" y="25" width="6" height="6" fill="url(#partnerGrad2)" opacity="0.3" transform="rotate(45 23 28)"/>
+  <rect x="124" y="25" width="6" height="6" fill="url(#partnerGrad2)" opacity="0.3" transform="rotate(45 127 28)"/>
+</svg>

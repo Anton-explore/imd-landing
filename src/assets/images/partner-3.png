@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60">
+  <defs>
+    <linearGradient id="partnerGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Partner logo placeholder -->
+  <rect x="10" y="10" width="130" height="40" fill="none" stroke="url(#partnerGrad3)" stroke-width="2" rx="5"/>
+  <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#partnerGrad3)">ЛАБСИСТЕМ</text>
+  <text x="75" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="url(#partnerGrad3)">Laboratory Systems</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="25" cy="30" r="2" fill="url(#partnerGrad3)" opacity="0.5"/>
+  <circle cx="30" cy="25" r="1.5" fill="url(#partnerGrad3)" opacity="0.3"/>
+  <circle cx="125" cy="30" r="2" fill="url(#partnerGrad3)" opacity="0.5"/>
+  <circle cx="120" cy="25" r="1.5" fill="url(#partnerGrad3)" opacity="0.3"/>
+</svg>

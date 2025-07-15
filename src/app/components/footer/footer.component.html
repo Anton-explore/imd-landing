@@ -1,0 +1,79 @@
+<footer class="footer-section" id="footer" #footerSection>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand animate-on-scroll">
+          <div class="brand-logo">
+            <img src="assets/images/logo.png" alt="IMD Logo" class="logo">
+          </div>
+          <h3>IMD Laboratory</h3>
+          <p class="brand-description">
+            Професійна мікробіологічна діагностика з використанням найсучасніших технологій для точного виявлення грибкових інфекцій.
+          </p>
+          <div class="social-links">
+            <button 
+              mat-icon-button 
+              *ngFor="let social of socialLinks" 
+              [attr.aria-label]="social.name"
+              (click)="openSocialLink(social.url)"
+              class="social-btn">
+              <mat-icon>{{ social.icon }}</mat-icon>
+            </button>
+          </div>
+        </div>
+        
+        <div class="footer-links animate-on-scroll">
+          <h4>Швидкі посилання</h4>
+          <ul>
+            <li *ngFor="let link of quickLinks">
+              <a (click)="scrollToSection(link.anchor)" class="footer-link">
+                {{ link.name }}
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact animate-on-scroll">
+          <h4>Контактна інформація</h4>
+          <div class="contact-item">
+            <mat-icon>phone</mat-icon>
+            <a (click)="makeCall()" class="contact-link">{{ contactInfo.phone }}</a>
+          </div>
+          <div class="contact-item">
+            <mat-icon>email</mat-icon>
+            <a (click)="sendEmail()" class="contact-link">{{ contactInfo.email }}</a>
+          </div>
+          <div class="contact-item">
+            <mat-icon>location_on</mat-icon>
+            <span>{{ contactInfo.address }}</span>
+          </div>
+          <div class="contact-item">
+            <mat-icon>schedule</mat-icon>
+            <span>{{ contactInfo.workingHours }}</span>
+          </div>
+        </div>
+        
+        <div class="footer-cta animate-on-scroll">
+          <h4>Дізнайтеся більше</h4>
+          <p>Відвідайте наш основний сайт для отримання повної інформації про всі послуги IMD.</p>
+          <button mat-raised-button color="primary" class="main-site-btn" (click)="navigateToMainSite()">
+            ПЕРЕЙТИ НА САЙТ IMD
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom-content animate-on-scroll">
+        <p class="copyright">
+          © {{ currentYear }} IMD Laboratory. Всі права захищені.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Політика конфіденційності</a>
+          <a href="#" class="footer-bottom-link">Умови використання</a>
+          <a href="#" class="footer-bottom-link">Контакти</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

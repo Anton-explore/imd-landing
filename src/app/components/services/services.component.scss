@@ -1,0 +1,252 @@
+.services-section {
+  padding: 100px 0;
+  background: white;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.services-text {
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+}
+
+.services-list {
+  margin-bottom: 40px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  mat-icon {
+    color: #4caf50;
+    font-size: 24px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 400;
+  }
+}
+
+.order-btn {
+  background: linear-gradient(135deg, #009688, #4dd0e1);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 25px rgba(0, 150, 136, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 150, 136, 0.4);
+    background: linear-gradient(135deg, #00796b, #26c6da);
+  }
+}
+
+.services-certificates {
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.certificate-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.view-all-btn {
+  width: 100%;
+  background: transparent;
+  color: #009688;
+  border: 2px solid #009688;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+
+  &:hover {
+    background: #009688;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 150, 136, 0.3);
+  }
+}
+
+// Scroll animations
+.animate-on-scroll.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .services-section {
+    padding: 80px 0;
+  }
+
+  .services-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .services-text {
+    .section-title {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+
+  .service-item {
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .order-btn {
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .services-certificates {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .certificate-item {
+    img {
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .services-text {
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .service-item {
+    gap: 10px;
+
+    mat-icon {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 0.95rem;
+    }
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .certificate-item {
+    img {
+      height: 100px;
+    }
+  }
+
+  .services-certificates {
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+}
